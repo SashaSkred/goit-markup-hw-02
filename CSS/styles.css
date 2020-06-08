@@ -3,6 +3,7 @@
     --title-text-color: #212121;
     --accent-color: #2196f3;
     --background-color: #ffffff;
+    --logo-color: #000000;
 }
 
 /*color*/
@@ -16,8 +17,9 @@ body {
      text-decoration: none;     
  }
  .logo {
-     color: #000000;
-     font-family: Raleway; sans-serif;
+     color: var(--logo-color);
+     font-style: normal;
+     font-family: raleway, sans-serif;
      font-weight: 700;
      font-size: 26px;
      line-height: 1.19;
@@ -25,9 +27,9 @@ body {
  .logo-blue {
      color: var(--accent-color);
  }
-.sitenav-link {
+.link {
     color: var(--title-text-color);
-    font-family: roboto; sans-serif;
+    font-family: roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -35,13 +37,17 @@ body {
     letter-spacing: 2%;
 }  
 /*site-nav*/
-.sitenav-link:hover,
-.sitenav-link:focus {
+.link:hover,
+.link:focus,
+.link:active {
+    color: var(--accent-color);
+}
+.sitenav .link.current {
     color: var(--accent-color);
 }
 .feedback-link {
     color: var(--primary-text-color);
-    font-family: roboto; sans-serif;
+    font-family: roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -56,12 +62,17 @@ body {
 .hero-title {
     color: var(--background-color);
     background-color: rgba(47, 48, 58, 0.8);
+    font-family: roboto, sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 3%;
 }
 /* section */
 .section-title {
     background-color: var(--background-color);
     color: var(--title-text-color);
-    font-family: roboto; sans-serif;
+    font-family: roboto, sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -71,7 +82,7 @@ body {
 .features-list .title {
     background-color: var(--background-color);
     color: var(--title-text-color);
-    font-family: roboto; sans-serif;
+    font-family: roboto, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -81,7 +92,7 @@ body {
 .features-list .text {
     background-color: var(--background-color);
     color: var(--primary-text-color);
-    font-family: roboto; sans-serif;
+    font-family: roboto, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -92,7 +103,7 @@ body {
 .services-list .title {
     background-color: rgba(47, 48, 58, 0.8);
     color: var(--background-color);
-    font-family: roboto; sans-serif;
+    font-family: roboto, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -103,7 +114,7 @@ body {
 .team-list .title {
     background-color: var(--background-color);
     color: var(--title-text-color);
-    font-family: roboto; sans-serif;
+    font-family: roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -113,7 +124,7 @@ body {
 .team-list .text {
     background-color: var(--background-color);
     color: var(--primary-text-color);
-    font-family: roboto; sans-serif;
+    font-family: roboto, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -124,7 +135,7 @@ body {
 .button-style {
     background-color: #F5F4FA;
     color: var(--title-text-color);
-    font-family: roboto; sans-serif;
+    font-family: roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -133,12 +144,13 @@ body {
 }
 .button-style:hover,
 .button-style:focus {
-    color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: #ffffff;
 }
 .portfolio-product .title {
     background-color: var(--background-color);
     color: var(--title-text-color);
-    font-family: roboto; sans-serif;
+    font-family: roboto, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -148,7 +160,7 @@ body {
 .portfolio-product .text {
     background-color: var(--background-color);
     color: var(--primary-text-color);
-    font-family: roboto; sans-serif;
+    font-family: roboto, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -156,10 +168,13 @@ body {
     letter-spacing: 3%;
 } 
 /* footer */
+.footer {
+    background-color: #2f303a;
+}
 .footer .title {
     background-color: #2f303a;
     color: var(--background-color);
-    font-family: roboto; sans-serif;
+    font-family: roboto, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -169,7 +184,7 @@ body {
 .address .text {
     background-color: #2f303a;
     color: var(--background-color);
-    font-family: roboto; sans-serif;
+    font-family: roboto, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -179,7 +194,7 @@ body {
 .address-link {
     background-color: #2F303A;
     color: rgba(255, 255, 255, 0.6);
-    font-family: roboto; sans-serif;
+    font-family: roboto, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -193,13 +208,18 @@ body {
 .copyright {
     background-color: #2F303A;
     color: rgba(255, 255, 255, 0.4);
-    font-family: roboto; sans-serif;
+    font-family: roboto, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 2;
     letter-spacing: 3%;
 } 
-.address-link:hover,
-.address-link:focus {
-    color: var(--accent-color);
+.footer .logo {
+    color: #ffffff;
+    font-style: normal;
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+} 
