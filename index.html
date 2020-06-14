@@ -5,32 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio v.1</title>
     <link rel="stylesheet" href="./CSS/normalize.css">
-    <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body>
     <!--header-->
     <header class="Pages-header">
         <nav>
-            <a href="./index.html" class="logo"><span class="logo-blue">Web</span>Studio</a>
+            <a href="./index.html" class="logo logo-header"><span class="logo-blue">Web</span>Studio</a>
              <ul class="sitenav">
-                    <li><a href="./index.html" class="link current">Студия</a></li>
-                    <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li><a href="" class="link">Контакты</a></li>
+                    <li><a href="./index.html" class="link current link-style">Студия</a></li>
+                    <li><a href="./portfolio.html" class="link link-style">Портфолио</a></li>
+                    <li><a href="" class="link link-style">Контакты</a></li>
              </ul>
         </nav>      
         <ul class="feedback">
-            <li><a href="mailto:info@devstudio.com" class="feedback-link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="feedback-link">+38(096)-111-11-11</a></li>
+            <li><a href="mailto:info@devstudio.com" class="feedback-link link-style">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111" class="feedback-link link-style">+38(096)-111-11-11</a></li>
         </ul>
     </header>
+    <!--main-->
     <main>
         <!--hero-->
      <section class="hero">
         <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
             ДЛЯ ВАШЕГО БИЗНЕСА
         </h1>
-        <a href="">Заказать услугу</a>
+        <input class="button" type="button" value="Заказать услугу">
      </section>
         <!--Features of a given company-->
     <section class="section">
@@ -138,10 +139,9 @@
         </ul>
     </section>
     </main>
-
     <!--footer-->
     <footer class="footer">
-        <a href="#" class="logo"><span class="logo-blue">Web</span>Studio</a>                             
+        <a href="#" class="logo logo-footer"><span class="logo-blue">Web</span>Studio</a>                             
             <address class="address">
                 <p class="text">г. Киев, пр-т Леси Украинки, 26</p>
                 <a href="info@example.com" class="address-link">info@example.com</a><br/>
@@ -155,7 +155,7 @@
                 <li><a href="http://www.linkedin.com"><img src="./Images/linkedin.svg" alt="linkedin"></a></li>
             </ul>
             <h2 class="title">Подпишитесь на рассылку</h2>
-            <input type="button" value="Подписаться">
+            <input class="button" type="button" value="Подписаться">
             <p class="copyright">2020 | Developed by GoIT Students</p>
     </footer>
 </body>
